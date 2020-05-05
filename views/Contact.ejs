@@ -1,0 +1,47 @@
+<%- include ("partials/Header") %>
+
+    <section class="contact">
+        <h3>JECiNT.nG Equipment Leasing and Servicing Lt.D</h3>
+       <div class="container text-center align-middle">
+            <h1>Contact Us</h1> 
+            <div class="contact-wrap"> 
+                <div class="row">
+                   <p>42 Crecent close, Tobaz, Wakanda</p>
+                </div>
+                <div>
+                    <p><i class="fa fa-phone"></i>(+255)0703 546 99022</p>
+                </div>
+                 <p>To get a comprehensive understanding on our packages or to make enquiries on our services that sooths your needs, 
+                    please fill the form below and we will definitely get in touch with you in the shortest possible time. 
+                 </p>
+                <hr>
+                <div class="row h-100 justify-content-center align-items-center">
+                    <div  class="col-10 col-md-8 col-lg-6">
+                        <form  class="form-signup" id="submit" action="/api/contact/create" method="POST">
+                            <div class="form-group">
+                                <label for="inputName" class="sr-only">Name</label>
+                               <input type="text" class="form-control" required name="name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail" class="sr-only">Email address</label>
+                                <input type="email" id="inputEmail" class="form-control" required name="email" placeholder="Email address">
+                            </div>
+                            <div class="form-group">
+                               <textarea name="message"  form="submit" cols="30" rows="10" class="form-control" placeholder="Enter text here..." ></textarea>
+                            </div> 
+                            <button class="btn btn-primary btn-customized" type="submit" value="save">Submit</button>
+                        </form>
+                    </div> 
+                    <div class="side">
+                        <h3>Working hours </h3>
+                        <p>We're open for bussiness</p>
+                        <p>Monday - Friday: 9am - 5pm</p>
+                        <p>Saturday: 12noon - 2pm</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>  
+           </div>               
+       </div> 
+    </section>   
+
+<%- include ("partials/Footer") %>

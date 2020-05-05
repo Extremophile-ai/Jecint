@@ -1,0 +1,403 @@
+/* General styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* styles for nav */
+
+.navbar-brand a{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    margin-top: 0px;
+    padding-bottom: 0;
+    
+}
+
+.navbar-brand a:hover{
+    color:#c3c6c9;
+}
+
+.navbar-brand a.btn{
+    text-transform: none;
+    padding-bottom: 0;
+}
+
+.navbar{
+    margin-top: -23px;
+    padding-top:10px;
+    height: auto;
+}
+
+nav .right ul li a{
+    display: flex;
+    font-size: 15px;
+    margin-top: auto;
+    flex-direction: row;
+    text-align: center;
+}
+
+
+/* style for hr */
+
+hr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 3px;
+    background-color: #b5bff7;
+    border: 0;
+    margin: auto;
+    padding-top: auto;
+   
+}
+
+/* Styles for first */
+
+.first{
+    color: #0f0718;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    min-height: 160vh;
+    margin-bottom: -35px;
+    z-index: 0;
+}
+
+.first .background-image{
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    background-color: #99befa;
+    margin-top: -17px;
+}
+
+.first-content{
+    /* opacity: 0; */
+    margin-top: 100px;
+    animation: 1s slidefade 1s forwards;
+}
+
+@keyframes slidefade{
+    50%{
+        opacity: 1;
+        margin: 0;
+    }
+}
+.first h3{
+    font: bold 50px "Open Sans", sans-serif;
+    margin-bottom: 15px;
+}
+
+.first p{
+    font: bold 30px "Open Sans", sans-serif;
+    margin-bottom:40px;
+    color: black;   
+}
+
+.first a.btn{
+    padding: 20px 46px;
+}
+
+.second{
+    background-color:#fff;
+}
+
+a.btn{
+    color: white;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: bold;
+    background-color: #97a1fc;
+    opacity: 1;
+}
+
+a {
+    justify-content: flex-end;
+    color: #101312;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: "Open Sans";
+    margin: 20px;
+    transition: color 0.5s ease-out;
+}
+a:hover{
+    color: midnightblue;
+}
+
+i{
+    margin-right: 10px;
+}
+
+/* style for services section */
+
+.services h1{
+    display: flex;
+    font-size: 36px;
+    justify-content: center;
+    margin-top: 22px;
+}
+
+.p-services{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services .grid div{
+    padding: 50px;
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.services .grid div p a{
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+.services .grid h4{
+    font-size: 30px;
+    margin: 25px 0;
+}
+.services .grid div p{
+    align-items: baseline;
+}
+
+/* styles for catalogue */
+
+.catalogue h1{
+    display: flex;
+    font-size: 36px;
+    justify-content: center;
+    margin-top: 22px;
+}
+
+.catalogue p{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.catalogue .grid li {
+    list-style: none;
+    height: 350px;
+    padding: 20px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+} 
+
+.catalogue .grid li.small {
+    flex-basis: 40%;
+}
+
+.catalogue .grid li.large {
+    flex-basis: 60%;
+} 
+
+@media (max-width: 1100px){
+    .catalogue .grid li.small,
+    .catalogue .grid li.large{
+         flex-basis: 50%;
+    }
+}
+
+@media (max-width: 800px){
+    .catalogue .grid li.small,
+    .catalogue .grid li.large{
+         flex-basis: 100%;
+    }
+}
+
+/* contact section */
+
+.contact{
+    padding-top: 60px;
+}
+.contact h3{
+    display: flex;
+    font-size: 36px;
+    justify-content: center;
+    margin-top: -40px;
+    padding-top: 10px;
+}
+.contact .row{
+    display: flex;
+    font-size: 20px;
+    justify-content:center;    
+}
+
+.contact-wrap{
+    padding-top: -10px;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+.side{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 180px;
+    padding-bottom: 27px;
+    padding-left: 200px;
+    font-size: 20px;
+    align-items: baseline;
+}
+
+@media (max-width: 1100px){
+    .side{
+        display: flex;
+        padding-top: 50px;
+        margin-left: -180px;
+    }
+}
+@media (max-width: 800px){
+    .side{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+    margin-left: -150px;
+    font-size: 20px;
+    flex-basis: 100%;
+    align-items: baseline;
+    }
+}
+
+.side p{
+    font-size: 16px;
+}
+
+.contact  h1{
+    display: flex;
+    font-size: 36px;
+    justify-content: center;
+    margin-top: 22px;
+    padding-top: 40px;
+    
+}
+
+.contact  p{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contact .form-signup{
+    padding-top: 20px;
+}
+
+.contact form .btn{
+    padding: 13px 80px;
+    font-size: 20px;
+}
+
+.contact .container .form-signup{
+    padding-bottom: 10px;
+}
+
+/* About section */
+
+.abouts h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+ .abouts p{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.thumbnail{
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin-left: 20px;
+    margin-bottom: auto;
+    height: 550px;
+}
+.thumbnail img{
+    height: 400px;
+}
+
+.thumbnail p{
+    display: flex;
+    padding-top: 150px;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+/* End section */
+.end p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+.end a{
+    margin-left: 1200px;
+}
+/* Footer section */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #909091;
+    color: #0808089d;
+    padding: 10px  0;
+    padding-top: 20px;
+}
+
+footer ul{
+    display: flex;
+}
+
+footer ul li{
+    margin-left: 16px;
+    list-style: none;
+}
+
+footer p{
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0.6;
+    align-self: center;
+    margin: 20px;
+    justify-content: flex-start;
+}
+
+@media (max-width: 1100px) {
+    footer{
+        flex-direction: column;
+    }
+    footer p{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    footer ul li{
+        margin: 0 8px;
+    }
+}

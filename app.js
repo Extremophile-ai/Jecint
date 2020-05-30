@@ -17,8 +17,8 @@ var options = {
     useFindAndModify: false,
     family: 4
 };
-// mongoose.connect("mongodb://localhost/Jey", options);
-mongoose.connect("mongodb+srv://GP:Power1050@cluster0-rk6gf.mongodb.net/test?retryWrites=true&w=majority", options)
+mongoose.connect("mongodb://localhost/Jey", options).  catch(error => handleError(error));
+// mongoose.connect("mongodb+srv://GP:Power1050@cluster0-rk6gf.mongodb.net/test?retryWrites=true&w=majority", options)
 
 
 // handle error after connection is established
@@ -35,7 +35,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static(__dirname + "/public"));
 app.use("/api/contact", contactRoute)
 
-
+  
 app.get("/", function(req, res){
     res.render("Home");
 });
@@ -81,8 +81,8 @@ app.get("/end", function(req, res){
 
 
 
+// app.listen(process.env.PORT, () => {})
 
-
-app.listen(4020, function(){
+app.listen(4010, function(){
     console.log("JECiNT is Ready")
 });

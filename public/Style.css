@@ -75,10 +75,22 @@ hr{
     left: 0;
     width: 100%;
     height: 100%;
+    background-position: center;
     background-size: cover;
+    object-fit: cover;
     z-index: -1;
     background-color: #99befa;
     margin-top: -17px;
+    background-attachment: fixed;
+}
+
+@media (max-width: 800px){
+    .first .background-image{
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+        position: absolute;
+    }
 }
 
 .first-content{
@@ -376,7 +388,7 @@ footer ul{
 }
 
 footer ul li{
-    margin-left: 16px;
+    margin-left: 5px;
     list-style: none;
 }
 

@@ -1,6 +1,6 @@
 var express                = require("express");
 var router                 = express.Router();
-var db                     = require("../Models/Idex");
+var db                     = require("../Models/Index");
 
 
 
@@ -47,4 +47,4 @@ router.get("/:Id", function(req, res){
     });
 
 
-module.exports = router
+module.exports = router;

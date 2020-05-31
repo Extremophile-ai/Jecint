@@ -6,6 +6,9 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #c3c6c9;
+}
 /* styles for nav */
 
 .navbar-brand a{
@@ -38,7 +41,7 @@ nav .right ul li a{
     font-size: 15px;
     margin-top: auto;
     flex-direction: row;
-    text-align: center;
+    /* text-align: center; */
 }
 
 
@@ -60,7 +63,7 @@ hr{
 /* Styles for first */
 
 .first{
-    color: #0f0718;
+    color: rgb(20, 20, 20);
     position: relative;
     justify-content: center;
     text-align: center;
@@ -75,12 +78,12 @@ hr{
     left: 0;
     width: 100%;
     height: 100%;
-    background-position: center;
+    /* background-position: center; */
     background-size: cover;
     object-fit: cover;
     z-index: -1;
     background-color: #99befa;
-    margin-top: -17px;
+    margin-top: -20px;
     background-attachment: fixed;
 }
 
@@ -120,9 +123,9 @@ hr{
     padding: 20px 46px;
 }
 
-.second{
+/* .second{
     background-color:#fff;
-}
+/* }  */
 
 a.btn{
     color: white;
@@ -133,7 +136,9 @@ a.btn{
     background-color: #97a1fc;
     opacity: 1;
 }
-
+a.btn:hover {
+    color: #c3c6c9;
+}
 a {
     justify-content: flex-end;
     color: #101312;
@@ -144,7 +149,7 @@ a {
     transition: color 0.5s ease-out;
 }
 a:hover{
-    color: midnightblue;
+    color: #c3c6c9;;
 }
 
 i{
@@ -314,8 +319,14 @@ i{
 }
 
 .contact form .btn{
+    color: white;
     padding: 13px 80px;
     font-size: 20px;
+    background-color: #97a1fc;
+}
+
+.contact form .btn:hover{
+    color: #c3c6c9;
 }
 
 .contact .container .form-signup{
@@ -377,7 +388,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #909091;
+    background-color: #5c5d5e;
     color: #0808089d;
     padding: 10px  0;
     padding-top: 20px;
